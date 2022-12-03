@@ -14,6 +14,14 @@ make -j32
 
 cd ${work_dir}
 
+rm -rf ${work_dir}/build
+mkdir -p ${work_dir}/build
+cd ${work_dir}/build
+
+cmake ..
+make -j32
+
+cd ${work_dir}
 
 
 
